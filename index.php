@@ -1,6 +1,6 @@
 <?php
 
-print_r($_POST);
+//print_r($_POST);
 
 if(!empty($_POST)){// if this is a post method and the post data is not empty
     $title = $_POST['title']; // sterilize in production mode
@@ -18,7 +18,7 @@ if(!empty($_POST)){// if this is a post method and the post data is not empty
         // insert batch all the tags to table_tag
         // add the relationship with blog_post_id and tag_id to table_blog_relate_tag
         // transaction commit or transaction rollback
-        
+
     }
     
 }
